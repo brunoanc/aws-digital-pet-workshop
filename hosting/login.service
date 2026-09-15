@@ -1,0 +1,34 @@
+[Unit]
+Description=Workshop isolated login service
+After=network-online.target
+Wants=network-online.target
+StartLimitIntervalSec=300
+StartLimitBurst=3
+
+[Service]
+User=workshop-login
+Group=workshop-login
+WorkingDirectory=/opt/workshop-login
+ExecStart=/opt/workshop-login/venv/bin/python -m scripts.login_runtime
+Environment=PET_ACCESS_CONFIG=/etc/workshop-login/access.json
+Environment=PYTHONDONTWRITEBYTECODE=1
+UnsetEnvironment=AWS_PROFILE AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN
+RuntimeDirectory=workshop-login
+RuntimeDirectoryMode=0700
+StateDirectory=workshop-login
+StateDirectoryMode=0700
+UMask=0077
+Restart=on-failure
+RestartSec=10
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+RestrictSUIDSGID=true
+CapabilityBoundingSet=
+ReadWritePaths=/run/workshop-login /var/lib/workshop-login
+LimitCORE=0
+TimeoutStopSec=15
+
+[Install]
+WantedBy=multi-user.target

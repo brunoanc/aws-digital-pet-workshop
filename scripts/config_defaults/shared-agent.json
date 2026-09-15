@@ -1,0 +1,22 @@
+{
+  "account_id": "111122223333",
+  "region": "us-east-1",
+  "teams": {
+    "team-01": {
+      "role_arn": "arn:aws:iam::111122223333:role/example-team-01-card",
+      "table_name": "example-team-01",
+      "agent": {
+        "function_name": "example-team-01-agent",
+        "function_url": "https://aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.lambda-url.us-east-1.on.aws/",
+        "model_id": "amazon.nova-lite-v1:0",
+        "read_timeout_seconds": 100,
+        "max_response_bytes": 65536,
+        "max_input_chars": 2000,
+        "max_messages": 12,
+        "max_tool_calls": 3,
+        "max_requests": 60,
+        "min_interval_seconds": 5
+      }
+    }
+  }
+}

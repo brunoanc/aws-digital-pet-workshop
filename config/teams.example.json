@@ -1,0 +1,10 @@
+{
+  "team-01": {
+    "identity_center_user_ids": [],
+    "cognito_subjects": []
+  },
+  "team-02": {
+    "identity_center_user_ids": [],
+    "cognito_subjects": []
+  }
+}

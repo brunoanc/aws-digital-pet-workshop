@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Workshop Event: Build Your First AI Agent on AWS</title>
+    <link rel="stylesheet" href="vendor/dist/reset.css">
+    <link rel="stylesheet" href="vendor/dist/reveal.css">
+    <link rel="stylesheet" href="vendor/dist/plugin/highlight/monokai.css">
+    <link rel="stylesheet" href="theme.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown="slides.md" data-separator="^---$" data-separator-notes="^Notes:"></section>
+      </div>
+    </div>
+    <script src="vendor/dist/reveal.js"></script>
+    <script src="vendor/dist/plugin/markdown.js"></script>
+    <script src="vendor/dist/plugin/highlight.js"></script>
+    <script src="vendor/dist/plugin/notes.js"></script>
+    <script>
+      Reveal.initialize({
+        width: 1920,
+        height: 1080,
+        margin: 0,
+        center: false,
+        hash: true,
+        transition: 'fade',
+        backgroundTransition: 'fade',
+        slideNumber: 'c/t',
+        controls: false,
+        progress: true,
+        pdfSeparateFragments: false,
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+      });
+    </script>
+  </body>
+</html>

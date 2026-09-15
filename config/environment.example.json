@@ -1,0 +1,44 @@
+{
+  "region": "us-east-1",
+  "availability_zone": "us-east-1a",
+  "name": "workshop",
+  "resource_prefix": "dp-workshop",
+  "management": {"account_id": "111122223333", "profile": "workshop-management"},
+  "workload": {"account_id": "444455556666", "profile": "workshop"},
+  "state_bucket_name": "workshop-state-change-this",
+  "budget": {
+    "name": "Workshop",
+    "amount_usd": 50,
+    "alert_amounts_usd": [10, 20, 30],
+    "email_addresses": ["organizador@example.com"],
+    "import_existing": false
+  },
+  "identity_center": {
+    "instance_arn": "arn:aws:sso:::instance/ssoins-1111222233334444",
+    "identity_store_id": "d-1111222233",
+    "session_hours": 4,
+    "assignments_enabled": false,
+    "emergency_deny": false
+  },
+  "model": {
+    "model_id": "amazon.nova-lite-v1:0",
+    "personality": "Ayuda a cuidar una mascota digital. Responde en español y consulta sus datos antes de describir su estado.",
+    "allow_mutations": false
+  },
+  "layer_zip_path": ".local/agent-layer/agent-layer.zip",
+  "web": {
+    "domain": "workshop.example.com",
+    "ami_id": "ami-00000000000000000",
+    "cognito_domain_prefix": "workshop-change-this",
+    "saml_metadata_url": null,
+    "cards_enabled": false,
+    "chat_enabled": false
+  },
+  "access": {
+    "opens_at": 0,
+    "closes_at": 1,
+    "max_session_seconds": 3600,
+    "enabled": false
+  },
+  "deployment": {}
+}

@@ -1,0 +1,15 @@
+{
+    admin off
+    auto_https disable_redirects
+}
+
+http://@@DOMAIN@@ {
+    redir https://@@DOMAIN@@{uri} 308
+}
+
+https://@@DOMAIN@@ {
+    header Cache-Control "no-store"
+    header X-Content-Type-Options "nosniff"
+    header Referrer-Policy "no-referrer"
+    respond "El taller está en preparación." 503
+}

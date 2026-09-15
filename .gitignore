@@ -1,0 +1,35 @@
+# Organizer-local configuration and private deployment data
+AGENTS.md
+.agents/
+.angets/
+.codex/
+slides_example/
+playbook/
+DIGITAL_PET_WORKSHOP_PROPOSAL.md
+# Internal diagnostic; not part of the public workshop distribution.
+scripts/check_bedrock.py
+.local/
+backup/
+.env
+.env.*
+.streamlit/secrets.toml
+!.env.example
+*.tfstate
+*.tfstate.*
+*.tfplan
+.terraform/
+*.tfvars
+!*.example.tfvars
+*.tfvars.json
+*.tfbackend
+!*.example.tfbackend
+*.tflock
+*.plan.json
+crash.log
+
+# Local dependencies and generated output
+.venv/
+.ruff_cache/
+__pycache__/
+node_modules/
+slides/dist/

@@ -1,0 +1,19 @@
+{
+  "account_id": "111122223333",
+  "profile": "workshop-rehearsal",
+  "region": "us-east-1",
+  "team_id": "team-01",
+  "function_name": "dp-rehearsal-team-01",
+  "model_id": "amazon.nova-lite-v1:0",
+  "title": "Mi mascota en AWS",
+  "personality": "Eres un cuidador amable y curioso que ayuda a estudiantes a cuidar un dragón digital; responde en español con explicaciones breves.",
+  "max_output_tokens": 512,
+  "max_model_turns": 4,
+  "max_tool_calls": 3,
+  "max_messages": 12,
+  "max_input_chars": 2000,
+  "max_personality_chars": 2000,
+  "timeout_seconds": 60,
+  "temperature": 0.3,
+  "allow_mutations": false
+}

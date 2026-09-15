@@ -1,0 +1,18 @@
+{
+    admin off
+    auto_https disable_redirects
+}
+
+http://@@DOMAIN@@ {
+    redir https://@@DOMAIN@@{uri} 308
+}
+
+https://@@DOMAIN@@ {
+    header Cache-Control "no-store"
+    header X-Content-Type-Options "nosniff"
+    header Referrer-Policy "no-referrer"
+    reverse_proxy 127.0.0.1:8501 {
+        # Cognito usa logout_uri; Streamlit conserva el cierre de sus cookies.
+        header_down Location "^(https://[a-z0-9-]+[.]auth[.]us-[a-z]+-[0-9]+[.]amazoncognito[.]com/logout[?](?:[^#]*&)?post_logout_redirect_uri=[^#]*)$" "$1&logout_uri=https%3A%2F%2F@@DOMAIN@@"
+    }
+}

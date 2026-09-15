@@ -1,0 +1,15 @@
+{
+  "name": "digital-pet-workshop-slides",
+  "version": "0.1.0",
+  "private": true,
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "start": "node serve.mjs",
+    "dev": "npm run build && npm start"
+  },
+  "dependencies": {
+    "reveal.js": "6.0.2"
+  }
+}

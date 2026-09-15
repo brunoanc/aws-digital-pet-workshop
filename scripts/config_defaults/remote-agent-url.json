@@ -1,0 +1,6 @@
+{
+  "function_name": "dp-rehearsal-team-01-agent",
+  "read_timeout_seconds": 100,
+  "max_response_bytes": 65536,
+  "function_url": "https://aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.lambda-url.us-east-1.on.aws/"
+}

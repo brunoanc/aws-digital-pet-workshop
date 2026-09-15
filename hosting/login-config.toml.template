@@ -1,0 +1,27 @@
+[server]
+address = "127.0.0.1"
+port = 8501
+headless = true
+fileWatcherType = "none"
+enableCORS = true
+enableXsrfProtection = true
+enableStaticServing = false
+maxUploadSize = 1
+maxMessageSize = 2
+
+[browser]
+serverAddress = "@@DOMAIN@@"
+serverPort = 443
+gatherUsageStats = false
+
+[client]
+showErrorDetails = "none"
+toolbarMode = "minimal"
+
+[logger]
+level = "error"
+
+[secrets]
+files = ["/run/workshop-login/secrets.toml"]
+
+@@THEME@@

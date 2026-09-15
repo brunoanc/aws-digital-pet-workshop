@@ -1,0 +1,11 @@
+{
+  "account_id": "111122223333",
+  "profile": "workshop-rehearsal",
+  "region": "us-east-1",
+  "instance_id": "i-00000000000000000",
+  "instance_name": "digital-pet-test-ui",
+  "domain": "workshop-test.example.com",
+  "route": "maintenance",
+  "version": "2.11.4",
+  "sha256": "527fbf917c39189a1e3b31d34fa955601680b2d5c8055d2a87b8b9588dec7bb9"
+}

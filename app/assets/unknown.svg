@@ -1,0 +1,6 @@
+<svg viewBox="0 0 360 310" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <path d="M105 236Q62 189 95 135Q99 58 180 53Q264 57 265 135Q299 195 253 243Q225 294 180 277Q129 291 105 236Z" fill="#b9c8bd" stroke="#486453" stroke-width="4"/>
+  <g class="eyes" fill="#486453"><ellipse cx="145" cy="142" rx="8" ry="12"/><ellipse cx="215" cy="142" rx="8" ry="12"/></g>
+  <path d="M162 177Q180 191 198 177" fill="none" stroke="#486453" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="127" cy="163" r="11" fill="#e7b7a4"/><circle cx="233" cy="163" r="11" fill="#e7b7a4"/>
+</svg>

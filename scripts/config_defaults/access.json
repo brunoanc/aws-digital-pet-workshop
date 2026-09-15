@@ -1,0 +1,10 @@
+{
+  "issuer": "https://cognito-idp.us-east-1.amazonaws.com/us-east-1_EXAMPLE",
+  "client_id": "replacewithclientid",
+  "opens_at": 0,
+  "closes_at": 1,
+  "max_session_seconds": 3600,
+  "enabled": false,
+  "teams": ["team-01", "team-02"],
+  "members": {}
+}

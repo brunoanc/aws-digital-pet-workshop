@@ -1,0 +1,11 @@
+{
+  "name": "Sin nombre",
+  "species": "Dragón",
+  "health": 82,
+  "fullness": 25,
+  "energy": 38,
+  "happiness": 76,
+  "experience": 0,
+  "inventory": {"healthy_meal": 2, "cake": 1},
+  "version": 1
+}

@@ -1,0 +1,14 @@
+<svg viewBox="0 0 360 310" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <g stroke="#834e6e" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M220 252Q311 263 298 191Q272 178 254 218L220 216" fill="#e6a5c1"/>
+    <ellipse cx="181" cy="217" rx="64" ry="68" fill="#edb9d0"/>
+    <ellipse cx="181" cy="235" rx="36" ry="41" fill="#ffe9dc" stroke="none"/>
+    <g fill="#e390b1"><path d="M115 104Q51 81 70 43Q109 53 120 89M107 132Q43 138 42 101Q79 83 110 114M109 151Q70 192 53 164Q63 135 103 136"/><path d="M245 104Q309 81 290 43Q251 53 240 89M253 132Q317 138 318 101Q281 83 250 114M251 151Q290 192 307 164Q297 135 257 136"/></g>
+    <rect x="103" y="72" width="154" height="124" rx="57" fill="#f3c7da"/>
+    <g class="eyes" fill="#834e6e" stroke="none"><ellipse cx="145" cy="125" rx="8" ry="11"/><ellipse cx="217" cy="125" rx="8" ry="11"/></g>
+    <g fill="#e89cba" stroke="none"><ellipse cx="131" cy="150" rx="16" ry="9"/><ellipse cx="231" cy="150" rx="16" ry="9"/></g>
+    <path d="M166 151Q181 169 197 151" fill="none"/>
+    <path d="M120 218L96 236L117 244M241 218L265 236L244 244" fill="#f3c7da"/>
+    <ellipse cx="144" cy="275" rx="26" ry="15" fill="#f3c7da"/><ellipse cx="216" cy="275" rx="26" ry="15" fill="#f3c7da"/>
+  </g>
+</svg>

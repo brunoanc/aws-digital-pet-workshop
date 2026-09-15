@@ -1,0 +1,10 @@
+{
+  "account_id": "444455556666",
+  "profile": "workshop-rehearsal",
+  "region": "us-east-1",
+  "teams": {
+    "team-01": "dp-rehearsal-team-01",
+    "team-02": "dp-rehearsal-team-02"
+  },
+  "pet_fixture": "/absolute/path/to/aws_workshop/fixtures/starter.json"
+}

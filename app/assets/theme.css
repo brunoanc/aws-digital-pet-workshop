@@ -1,0 +1,7 @@
+.stMainBlockContainer { max-width: 1320px; padding-top: 2.5rem; }
+h1, h2, h3 { letter-spacing: -.035em; }
+.st-key-pet_card, .st-key-agent_chat { border-radius: 24px; padding: 20px; }
+.st-key-pet_indicators [data-testid="stMetricValue"] { font-size: 1.6rem; }
+.stButton button, .stFormSubmitButton button { border-radius: 12px; }
+[data-testid="stChatMessage"] { border-radius: 16px; }
+@media (max-width: 700px) { .stMainBlockContainer { padding: 1rem; } .st-key-pet_card, .st-key-agent_chat { padding: 12px; } }

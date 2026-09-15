@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es-MX"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style>{{STYLE}}</style></head>
+<body>
+<main class="habitat" data-action="idle" data-pending="{{ACTION}}" data-event="{{EVENT}}" data-scope="{{SCOPE}}" aria-label="Hábitat de {{NAME}}">
+  <div class="heading"><h2>{{NAME}}</h2><span class="species">{{SPECIES}}</span></div>
+  <div class="sun"></div><div class="cloud cloud-one"></div><div class="cloud cloud-two"></div>
+  <div class="hill hill-back"></div><div class="hill hill-front"></div>
+  <svg class="plants" viewBox="0 0 640 140" aria-hidden="true"><g fill="none" stroke="#6a9479" stroke-width="4" stroke-linecap="round"><path d="M65 136Q90 86 69 40M72 107Q33 99 37 73Q68 76 76 95M77 76Q108 57 110 32Q78 37 74 58M557 139Q543 96 565 53M552 108Q592 97 591 78Q561 77 554 100"/></g><g fill="#b6cf8b"><ellipse cx="31" cy="125" rx="23" ry="8"/><ellipse cx="595" cy="131" rx="27" ry="8"/></g></svg>
+  <div class="shadow"></div><div class="pet">{{ART}}</div>
+  <div class="effect" aria-hidden="true">{{SYMBOL}}</div>
+  <div class="action-label" role="status" aria-live="polite">{{LABEL}}</div>
+</main>
+<script>
+const scene = document.querySelector('.habitat');
+const eventId = scene.dataset.event;
+if (eventId) {
+  const key = 'pet-animation:' + scene.dataset.scope;
+  try {
+    const seen = JSON.parse(sessionStorage.getItem(key) || '[]');
+    if (!seen.includes(eventId)) {
+      sessionStorage.setItem(key, JSON.stringify([...seen, eventId].slice(-100)));
+      scene.dataset.action = scene.dataset.pending;
+      setTimeout(() => { scene.dataset.action = 'idle'; }, 3600);
+    }
+  } catch (_) {
+    scene.dataset.action = 'idle';
+  }
+}
+</script></body></html>

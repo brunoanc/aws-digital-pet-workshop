@@ -1,0 +1,17 @@
+{
+  "backend": {
+    "bucket": "workshop-state-change-this",
+    "region": "us-east-1",
+    "profile": "workshop-management",
+    "allowed_account_ids": ["111122223333"],
+    "encrypt": true,
+    "use_lockfile": true
+  },
+  "layer_zip_path": ".local/agent-layer/agent-layer.zip",
+  "agent_memory_mb": 512,
+  "agent_timeout_seconds": 90,
+  "pet_memory_mb": 128,
+  "pet_timeout_seconds": 30,
+  "log_retention_days": 1,
+  "tags": {"Project": "mascotas-ia", "Environment": "capacity"}
+}

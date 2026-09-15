@@ -1,0 +1,2 @@
+# Copy to .local/bootstrap.tfbackend and use an absolute local path.
+path = "/absolute/path/to/workshop/.local/bootstrap.tfstate"

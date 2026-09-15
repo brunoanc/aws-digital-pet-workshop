@@ -1,0 +1,9 @@
+# Use this template for downstream stacks rather than bootstrap.
+# Each stack requires its own private configuration and distinct state key.
+bucket              = "mascotas-tfstate-111122223333-cambia-este-sufijo"
+key                 = "mascotas/control.tfstate"
+region              = "us-east-1"
+profile             = "workshop-management"
+allowed_account_ids = ["111122223333"]
+encrypt             = true
+use_lockfile        = true

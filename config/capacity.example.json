@@ -1,0 +1,21 @@
+{
+  "account_id": "444455556666",
+  "management_account_id": "111122223333",
+  "profile": "workshop-rehearsal",
+  "region": "us-east-1",
+  "prefix": "dp-capacity",
+  "team_numbers": [81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95],
+  "state_prefix": "capacity/pets-and-agents",
+  "model_id": "amazon.nova-lite-v1:0",
+  "personality": "Consulta inspect_pet una vez antes de responder con el nombre y la energía de la mascota; no inventes datos ni realices cuidados.",
+  "max_output_tokens": 512,
+  "max_model_turns": 4,
+  "max_tool_calls": 3,
+  "max_input_chars": 2000,
+  "max_personality_chars": 2000,
+  "timeout_seconds": 60,
+  "temperature": 0.3,
+  "batches": [2, 5, 10, 15],
+  "pause_seconds": 60,
+  "message": "Consulta mi mascota y dime su nombre y energía; no hagas cuidados."
+}

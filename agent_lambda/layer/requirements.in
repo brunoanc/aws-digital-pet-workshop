@@ -1,0 +1,3 @@
+# Keep these versions aligned with pyproject.toml.
+strands-agents==1.55.1
+boto3==1.43.92
