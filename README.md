@@ -2,6 +2,8 @@
 
 Workshop diseñado para un AWS Student Builder Group; un agente construido con Strands y Amazon Bedrock consulta y cuida una mascota almacenada en DynamoDB. El agente y las acciones se ejecutan en AWS Lambda.
 
+![App del taller con la mascota digital, sus estadísticas y el chat del agente](docs/assets/app-preview.png)
+
 ## Documentación
 
 - [Guía de participantes](participant-guide/README.md); recorrido desde la consola de AWS, sin instalaciones locales.
